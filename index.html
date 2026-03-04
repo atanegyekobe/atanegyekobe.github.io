@@ -1,27 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pius | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <h1>Hello, I'm Pius</h1>
-    <p>Full-stack developer specializing in React, Node.js, PostgreSQL, and Drupal.</p>
+    <div class="container">
+      <h1>Pius</h1>
+      <p>Full-stack Developer | React • Node.js • PostgreSQL • Drupal</p>
+    </div>
   </header>
 
-  <section class="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="https://github.com/yourusername/project1">Project 1</a> - React + Node.js app</li>
-      <li><a href="https://github.com/yourusername/project2">Project 2</a> - PostgreSQL + Express API</li>
+  <!-- About -->
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>
+      I’m a full-stack web developer and project manager specializing in scalable, 
+      collaborative environments for NGOs and institutions. I focus on workflow 
+      integration, accessibility, and building inclusive digital solutions.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>React (Vite)</li>
+      <li>Node.js (Express/NestJS)</li>
+      <li>PostgreSQL</li>
+      <li>Drupal (Headless CMS)</li>
+      <li>Docker & DevOps</li>
+      <li>Workflow Automation (SharePoint, Power Automate, Teams)</li>
     </ul>
   </section>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: your.email@example.com</p>
+  <!-- Projects -->
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3><a href="https://github.com/yourusername/project1">Leave Request Workflow</a></h3>
+      <p>Automated staff leave requests using SharePoint, Power Automate, and Teams integration.</p>
+    </div>
+    <div class="project">
+      <h3><a href="https://github.com/yourusername/project2">E-commerce Dataset Generator</a></h3>
+      <p>Generated large-scale product datasets for e-commerce platforms with realistic entries.</p>
+    </div>
+    <div class="project">
+      <h3><a href="https://github.com/yourusername/project3">React + Node.js Dashboard</a></h3>
+      <p>Role-based dashboard with permission-aware views for institutional workflows.</p>
+    </div>
   </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourusername">linkedin.com/in/yourusername</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Pius. All rights reserved.</p>
+  </footer>
 </body>
 </html>
-
