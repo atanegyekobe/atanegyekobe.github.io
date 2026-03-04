@@ -46,8 +46,8 @@ section h2 {
   margin-bottom: 1rem;
 }
 
-/* Skills */
-.skills-list {
+/* Stack */
+.stack-list {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -55,7 +55,7 @@ section h2 {
   padding: 0;
 }
 
-.skills-list li {
+.stack-list li {
   background: #2980b9;
   color: #fff;
   padding: 0.5rem 1rem;
@@ -73,6 +73,26 @@ section h2 {
 }
 
 .project h3 a:hover {
+  text-decoration: underline;
+}
+
+/* Active Websites */
+.websites-list {
+  list-style: none;
+  padding: 0;
+}
+
+.websites-list li {
+  margin-bottom: 0.8rem;
+}
+
+.websites-list a {
+  color: #27ae60;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.websites-list a:hover {
   text-decoration: underline;
 }
 
