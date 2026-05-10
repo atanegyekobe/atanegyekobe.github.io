@@ -138,3 +138,20 @@ footer {
   background: #2c3e50;
   color: #fff;
 }
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;
+  background: #111827;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
