@@ -17,6 +17,9 @@
       <a href="cv/Pumpuni_Pius.pdf" target="_blank" class="btn">
     View CV
   </a>
+    <button class="btn" onclick="openEnquiries()">
+    Enquiries
+  </button>
 </div>
       
     </div>
@@ -115,5 +118,83 @@ This application helps users manage and track their income records efficiently w
   <footer>
     <p>&copy; 2026 UNPAA_TECH. All rights reserved.</p>
   </footer>
+
+  <!-- Enquiries Modal -->
+  <div id="enquiriesModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeEnquiries()">
+        &times;
+      </span>
+
+      <h2>Service Enquiries</h2>
+
+      <!-- Selector Buttons -->
+      <div class="service-tabs">
+        <button onclick="showService('website')">
+          Websites
+        </button>
+
+        <button onclick="showService('application')">
+          Mobile/Desktop Applications
+        </button>
+
+        <button onclick="showService('crm')">
+          CRM &amp; Automation
+        </button>
+      </div>
+
+      <!-- Website Section -->
+      <div id="website" class="service-content">
+        <h3>Website Development</h3>
+
+        <p>
+          Add your website service details, pricing,
+          features, and packages here.
+        </p>
+      </div>
+
+      <!-- Application Section -->
+      <div id="application" class="service-content">
+        <h3>Mobile/Desktop Applications</h3>
+
+        <p>
+          Add your application development services,
+          pricing, and technologies here.
+        </p>
+      </div>
+
+      <!-- CRM Section -->
+      <div id="crm" class="service-content">
+        <h3>CRM &amp; Automation</h3>
+
+        <p>
+          Add your CRM systems, automation services,
+          workflow optimization, and pricing here.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openEnquiries() {
+      document.getElementById("enquiriesModal").style.display = "flex";
+    }
+
+    function closeEnquiries() {
+      document.getElementById("enquiriesModal").style.display = "none";
+    }
+
+    function showService(serviceId) {
+      const services = document.querySelectorAll(".service-content");
+
+      services.forEach(service => {
+        service.style.display = "none";
+      });
+
+      document.getElementById(serviceId).style.display = "block";
+    }
+
+    showService('website');
+  </script>
 </body>
 </html>
