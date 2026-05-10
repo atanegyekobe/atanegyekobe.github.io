@@ -17,7 +17,7 @@
       <a href="cv/Pumpuni_Pius.pdf" target="_blank" class="btn">
     View CV
   </a>
-    <button class="btn" onclick="openEnquiries()">
+    <button id="enquiriesBtn" type="button" class="btn">
     Enquiries
   </button>
 </div>
@@ -194,7 +194,21 @@ This application helps users manage and track their income records efficiently w
       document.getElementById(serviceId).style.display = "block";
     }
 
-    showService('website');
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("enquiriesBtn").addEventListener("click", openEnquiries);
+
+      document.getElementById("enquiriesModal").addEventListener("click", event => {
+        if (event.target === event.currentTarget) {
+          closeEnquiries();
+        }
+      });
+
+      document.querySelectorAll(".service-tabs button").forEach(button => {
+        button.type = "button";
+      });
+
+      showService('website');
+    });
   </script>
 </body>
 </html>
