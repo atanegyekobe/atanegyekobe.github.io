@@ -101,6 +101,15 @@ section h2 {
   color: #555;
 }
 
+.project-card.is-placeholder {
+  border: 1px dashed #cbd5e1;
+  background: #f8fafc;
+}
+
+.project-card.is-placeholder p {
+  color: #64748b;
+}
+
 /* Active Websites */
 .websites-list {
   list-style: none;
